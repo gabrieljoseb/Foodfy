@@ -12,6 +12,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #111111;
 }
 
 header img {
@@ -72,4 +73,48 @@ header img {
     margin-top: 66px;
     margin-bottom: 0;
     float: right;
+}
+
+.content {
+    max-width: 940px;
+    margin: 0 200px;
+    align-content: center;
+}
+
+.content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    height: 202px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.card__image-container img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card__content {
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.card__info {
+    font-size: 14px;
+    color: #777777;
 }
