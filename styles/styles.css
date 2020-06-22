@@ -79,6 +79,7 @@ header img {
     max-width: 940px;
     margin: 0 200px;
     align-content: center;
+    margin-bottom: 50px;
 }
 
 .content h3 {
@@ -117,4 +118,16 @@ header img {
 .card__info {
     font-size: 14px;
     color: #777777;
+}
+
+footer {
+    background-color: #EEEEEE;
+    height: 62px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding-top: 23px;
 }
