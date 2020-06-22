@@ -26,7 +26,6 @@ header img {
     height: 32px;
     margin-top: 32px;   
     margin-left: 200px;
-    margin-bottom: 30px;
 }
 
 a:hover {
@@ -45,6 +44,16 @@ a:hover {
 
 .links a {
     margin: 0 15px;
+}
+
+.content {
+    max-width: 940px;
+    margin: 50px 200px;
+    align-content: center;
+}
+
+.content h3 {
+    margin-bottom: 20px;
 }
 
 footer {

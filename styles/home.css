@@ -4,6 +4,7 @@
     height: 366px;
     border-radius: 30px;
     margin: 0 200px;
+    margin-top: 30px;
     display: inline-table;
 }
 
@@ -34,19 +35,6 @@
     margin-top: 66px;
     margin-bottom: 0;
     float: right;
-}
-
-.content {
-    max-width: 940px;
-    margin: 0 200px;
-    align-content: center;
-    margin-bottom: 50px;
-}
-
-.content h3 {
-    
-    margin-bottom: 20px;
-    margin-top: 50px;
 }
 
 .cards {
