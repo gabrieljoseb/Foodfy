@@ -95,6 +95,8 @@
 
 .close-modal span {
     cursor: pointer;
+    color: #999999;
+    font-size: 16px;
 }
 
 /*=== MODAL.ACTIVE ===*/
