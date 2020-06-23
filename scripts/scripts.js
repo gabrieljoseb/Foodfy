@@ -22,3 +22,4 @@ modalOverlay.querySelector('.close-modal').addEventListener("click", function ()
     modalOverlay.querySelector('.food').innerHTML = null
     modalOverlay.querySelector('.card__info p').innerHTML = null
 })
+
