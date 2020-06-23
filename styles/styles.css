@@ -37,10 +37,6 @@ header a img {
     margin-top: 32px;   
 }
 
-a:hover {
-    font-weight: bold;
-}
-
 .links {
     display: inline-flex;
     margin-left: 105px;
@@ -52,6 +48,10 @@ a:hover {
 
 .links a {
     margin: 0 15px;
+}
+
+.links a:hover {
+    font-weight: bold;
 }
 
 .content {

@@ -1,6 +1,5 @@
 const cards = document.querySelectorAll('.card')
 const modalOverlay = document.querySelector('.modal-overlay')
-const modalContent = document.querySelector('.modal-content')
 
 for (let card of cards) {
     card.addEventListener("click", function () {
