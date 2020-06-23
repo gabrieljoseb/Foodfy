@@ -3,9 +3,8 @@
     width: 940px;
     height: 366px;
     border-radius: 30px;
-    margin: 0 200px;
-    margin-top: 30px;
-    display: inline-table;
+    margin: 30px auto 0 auto;
+    display: table;
 }
 
 .background-image p {

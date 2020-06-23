@@ -21,11 +21,20 @@ h3 {
     color: #111111;
 }
 
-header img {
+header {
+    width: 940px;
+    margin: 0  auto;
+    display: block;
+}
+
+header a {
+    background-image: url(/views/home.html);
+}
+
+header a img {
     width: 94px;
     height: 32px;
     margin-top: 32px;   
-    margin-left: 200px;
 }
 
 a:hover {
@@ -39,7 +48,6 @@ a:hover {
     color: #111111;
     position: absolute;
     top: 38px;
-    margin-bottom: 36px;
 }
 
 .links a {
@@ -47,9 +55,10 @@ a:hover {
 }
 
 .content {
-    max-width: 940px;
-    margin: 50px 200px;
+    width: 940px;
+    margin: 50px auto;
     align-content: center;
+    align-self: center;
 }
 
 .content h3 {

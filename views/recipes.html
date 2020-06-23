@@ -5,33 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodfy</title>
 
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/recipes.css">
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
     <header>
         <a href="home.html"><img src="/Assets/logo.png" alt="logo Foodfy"></a>
-        
+
         <div class="links">
             <a href="about.html">Sobre</a>
             <a href="recipes.html">Receitas</a>
         </div>
     </header>
 
-    <div class="background-image">
-        <p>
-            <strong>As melhores receitas</strong>
-            Aprenda a construir os melhores pratos
-            com receitas criadas por profissionais
-            do mundo inteiro.
-        </p>
-        <img src="/assets/chef.png" alt="chef de cozinha">
-    </div>
-
     <div class="content">
-        <h3>Mais acessadas</h3>
-
         <section class="cards">
             <div class="card">
                 <div class="card__image-container">
@@ -99,7 +87,89 @@
                     <p>por Vania Steroski</p>
                 </div>
             </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="/assets/burger.png" alt="hamburguer">
+                </div>
+                <div class="card__content">
+                    <p class="food">Triplo bacon burguer</p>
+                </div>
+                <div class="card__info">
+                    <p>por Jorge Relato</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="/assets/pizza.png" alt="pizza">
+                </div>
+                <div class="card__content">
+                    <p class="food">Pizza 4 estações</p>
+                </div>
+                <div class="card__info">
+                    <p>por Fabiana Melo</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="/assets/espaguete.png" alt="espaguete">
+                </div>
+                <div class="card__content">
+                    <p class="food">Espaguete ao alho</p>
+                </div>
+                <div class="card__info">
+                    <p>por Júlia Kinoto</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="/assets/lasanha.png" alt="lasanha">
+                </div>
+                <div class="card__content">
+                    <p class="food">Lasanha mac n' cheese</p>
+                </div>
+                <div class="card__info">
+                    <p>por Juliano Vieira</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="/assets/doce.png" alt="chocolate">
+                </div>
+                <div class="card__content">
+                    <p class="food">Docinhos pão-do-céu</p>
+                </div>
+                <div class="card__info">
+                    <p>por Ricardo Golvea</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="/assets/asinhas.png" alt="asinhas de frango">
+                </div>
+                <div class="card__content">
+                    <p class="food">Asinhas de frando ao barbecue</p>
+                </div>
+                <div class="card__info">
+                    <p>por Vania Steroski</p>
+                </div>
+            </div>
         </section>
+    </div>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div class="modal-background-shadow"></div>
+            <div class="modal-background">
+                <div class="modal-content">
+
+                    <img src="/assets/asinhas.png" alt="asinhas de frango">
+
+                    <a class="close-modal">
+                        Fechar modal
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
