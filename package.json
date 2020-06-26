@@ -1,0 +1,16 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrieljoseb/foodfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrieljoseb/foodfy/issues"
+  },
+  "homepage": "https://github.com/gabrieljoseb/foodfy#readme"
+}
