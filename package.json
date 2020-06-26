@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/gabrieljoseb/foodfy/issues"
   },
-  "homepage": "https://github.com/gabrieljoseb/foodfy#readme"
+  "homepage": "https://github.com/gabrieljoseb/foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
