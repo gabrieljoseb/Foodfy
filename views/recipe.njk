@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="informations">
+        <div class="recipe">
             <div class="ingredients">
                 <h3>Ingredientes</h3>
 
@@ -34,6 +34,7 @@
                     {% endfor %}
                 </ul>
             </div>
+
             <div class="preparation">
                 <h3>Modo de preparo</h3>
 
@@ -45,6 +46,13 @@
                     {% endfor %}
                 </ul>
             </div>
+
+            <div class="information">
+                <h3>Informações adicionais</h3>
+
+                <p>{{ recipe.information }}</p>
+            </div>
+
         </div>
 
     </div>

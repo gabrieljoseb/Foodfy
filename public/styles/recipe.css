@@ -21,10 +21,11 @@ ul {
     margin-top: 5px;
 }
 
-.informations h3 {
+.ingredients h3 {
     margin-top: 50px;
 }
 
-.preparation h3 {
+.preparation h3,
+.information h3 {
     margin-top: 39px;
 }
