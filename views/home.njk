@@ -6,125 +6,107 @@
     <link rel="stylesheet" href="/styles/home.css">
 {% endblock head %}
 
-
 {% block content %}
-
-{% endblock content %}
-<header>
-    <a href="home.html"><img src="/Assets/logo.png" alt="logo Foodfy"></a>
-
-    <div class="links">
-        <a href="about.html">Sobre</a>
-        <a href="recipes.html">Receitas</a>
+    <div class="background-image">
+        <p>
+            <strong>As melhores receitas</strong>
+            Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+        </p>
+        <img src="/assets/chef.png" alt="chef de cozinha">
     </div>
-</header>
 
-<div class="background-image">
-    <p>
-        <strong>As melhores receitas</strong>
-        Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
-    </p>
-    <img src="/assets/chef.png" alt="chef de cozinha">
-</div>
-
-<div class="content">
     <h3>Mais acessadas</h3>
 
-    <section class="cards">
-        <div class="card" id="burger">
-            <div class="card__image-container">
-                <img src="/assets/burger.png" alt="hamburguer">
+    <div class="content">
+        <section class="cards">
+            <div class="card" id="burger">
+                <div class="card__image-container">
+                    <img src="/assets/burger.png" alt="hamburguer">
+                </div>
+                <div class="card__content">
+                    <p class="food">Triplo bacon burguer</p>
+                </div>
+                <div class="card__info">
+                    <p>por Jorge Relato</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p class="food">Triplo bacon burguer</p>
+            <div class="card" id="pizza">
+                <div class="card__image-container">
+                    <img src="/assets/pizza.png" alt="pizza">
+                </div>
+                <div class="card__content">
+                    <p class="food">Pizza 4 estações</p>
+                </div>
+                <div class="card__info">
+                    <p>por Fabiana Melo</p>
+                </div>
             </div>
-            <div class="card__info">
-                <p>por Jorge Relato</p>
+            <div class="card" id="espaguete">
+                <div class="card__image-container">
+                    <img src="/assets/espaguete.png" alt="espaguete">
+                </div>
+                <div class="card__content">
+                    <p class="food">Espaguete ao alho</p>
+                </div>
+                <div class="card__info">
+                    <p>por Júlia Kinoto</p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="pizza">
-            <div class="card__image-container">
-                <img src="/assets/pizza.png" alt="pizza">
+            <div class="card" id="lasanha">
+                <div class="card__image-container">
+                    <img src="/assets/lasanha.png" alt="lasanha">
+                </div>
+                <div class="card__content">
+                    <p class="food">Lasanha mac n' cheese</p>
+                </div>
+                <div class="card__info">
+                    <p>por Juliano Vieira</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p class="food">Pizza 4 estações</p>
+            <div class="card" id="doce">
+                <div class="card__image-container">
+                    <img src="/assets/doce.png" alt="chocolate">
+                </div>
+                <div class="card__content">
+                    <p class="food">Docinhos pão-do-céu</p>
+                </div>
+                <div class="card__info">
+                    <p>por Ricardo Golvea</p>
+                </div>
             </div>
-            <div class="card__info">
-                <p>por Fabiana Melo</p>
+            <div class="card" id="asinhas">
+                <div class="card__image-container">
+                    <img src="/assets/asinhas.png" alt="asinhas de frango">
+                </div>
+                <div class="card__content">
+                    <p class="food">Asinhas de frando ao barbecue</p>
+                </div>
+                <div class="card__info">
+                    <p>por Vania Steroski</p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="espaguete">
-            <div class="card__image-container">
-                <img src="/assets/espaguete.png" alt="espaguete">
-            </div>
-            <div class="card__content">
-                <p class="food">Espaguete ao alho</p>
-            </div>
-            <div class="card__info">
-                <p>por Júlia Kinoto</p>
-            </div>
-        </div>
-        <div class="card" id="lasanha">
-            <div class="card__image-container">
-                <img src="/assets/lasanha.png" alt="lasanha">
-            </div>
-            <div class="card__content">
-                <p class="food">Lasanha mac n' cheese</p>
-            </div>
-            <div class="card__info">
-                <p>por Juliano Vieira</p>
-            </div>
-        </div>
-        <div class="card" id="doce">
-            <div class="card__image-container">
-                <img src="/assets/doce.png" alt="chocolate">
-            </div>
-            <div class="card__content">
-                <p class="food">Docinhos pão-do-céu</p>
-            </div>
-            <div class="card__info">
-                <p>por Ricardo Golvea</p>
-            </div>
-        </div>
-        <div class="card" id="asinhas">
-            <div class="card__image-container">
-                <img src="/assets/asinhas.png" alt="asinhas de frango">
-            </div>
-            <div class="card__content">
-                <p class="food">Asinhas de frando ao barbecue</p>
-            </div>
-            <div class="card__info">
-                <p>por Vania Steroski</p>
-            </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
-<div class="modal-overlay">
-    <div class="modal">
-        <div class="modal-content">
-            <div class="card__image-container">
-                <img src="/assets/pizza.png" alt="pizza">
-            </div>
-            <div class="card__content">
-                <p class="food">Pizza 4 estações</p>
-            </div>
-            <div class="card__info">
-                <p>por Fabiana Melo</p>
-            </div>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="card__image-container">
+                    <img src="/assets/pizza.png" alt="pizza">
+                </div>
+                <div class="card__content">
+                    <p class="food">Pizza 4 estações</p>
+                </div>
+                <div class="card__info">
+                    <p>por Fabiana Melo</p>
+                </div>
 
-            <div class="close-modal">
-                <span>Close modal</span>
+                <div class="close-modal">
+                    <span>Close modal</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <p>Todos os direitos reservados, receitas Foodfy.</p>
-</footer>
-
-<script src="/scripts/scripts.js"></script>
-</body>
-
-</html>
+    <script src="/scripts/scripts.js"></script>
+{% endblock content %}
