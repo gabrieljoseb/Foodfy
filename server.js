@@ -13,7 +13,7 @@ nunjucks.configure("views", {
 })
 
 server.get('/', (req, res) => {
-    res.render("home", { item: data })
+    res.render("home", { recipes: data })
 })
 
 server.get('/about', (req, res) => {
@@ -21,7 +21,7 @@ server.get('/about', (req, res) => {
 })
 
 server.get('/recipes', (req, res) => {
-    res.render("recipes", { item: data })
+    res.render("recipes", { recipes: data })
 })
 
 server.listen(5000, () => {
