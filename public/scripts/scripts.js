@@ -1,11 +1,11 @@
 const cards = document.querySelectorAll('.card')
 
-for (let card of cards) {
-    card.addEventListener("click", function () {
-        const cardId = card.getAttribute('id')
-        const cardFood = card.querySelector('.food').innerHTML
-        const cardChef = card.querySelector('.card__info p').innerHTML
-
-        
-    })
+for (let i = 0; i < cards.length; i++) {
+    (
+        (index) => {
+            cards[i].addEventListener("click", () => {
+                window.location.href = `/recipes/${index}`
+            })
+        }
+    ) (i)
 }

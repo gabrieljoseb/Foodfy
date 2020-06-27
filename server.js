@@ -9,7 +9,9 @@ server.set("view engine", "njk")
 server.use(express.static('public'))
 
 nunjucks.configure("views", {
-    express: server
+    express: server,
+    autoescape: true,
+    noCache: true
 })
 
 server.get('/', (req, res) => {
@@ -22,6 +24,20 @@ server.get('/about', (req, res) => {
 
 server.get('/recipes', (req, res) => {
     res.render("recipes", { recipes: data })
+})
+
+server.get('/recipes/:index', (req, res) => {
+    const recipes = data
+    let recipeIndex = req.params.index
+
+    // did because in recipes page, the data is repeated twice
+    if (recipeIndex > 5) 
+        recipeIndex -= 6
+
+    if (!recipes[recipeIndex]) 
+        return res.send('page not found!')
+    
+    return res.render("recipe", { recipe: recipes[recipeIndex] })
 })
 
 server.listen(5000, () => {

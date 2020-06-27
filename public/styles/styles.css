@@ -27,10 +27,6 @@ header {
     display: block;
 }
 
-header a {
-    background-image: url(/views/home.html);
-}
-
 header a img {
     width: 94px;
     height: 32px;
