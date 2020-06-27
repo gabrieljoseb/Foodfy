@@ -3,7 +3,7 @@
 {% block head %}
     <title>Foodfy - Receitas</title>
 
-    <link rel="stylesheet" href="/styles/recipes.css">
+    <link rel="stylesheet" href="/styles/recipe.css">
 {% endblock head %}
 
 {% block content %}
@@ -17,7 +17,7 @@
                 <p class="food">{{recipe.title}}</p>
             </div>
             <div class="card__info">
-                <p>{{recipe.title}}</p>
+                <p>por {{recipe.author}}</p>
             </div>
         </div>
 
