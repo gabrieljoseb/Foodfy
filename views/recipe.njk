@@ -17,7 +17,33 @@
                 <p class="food">{{recipe.title}}</p>
             </div>
             <div class="card__info">
-                <p>por {{recipe.author}}</p>
+                <p>por
+                    {{recipe.author}}</p>
+            </div>
+        </div>
+
+        <div class="informations">
+            <div class="ingredients">
+                <h3>Ingredientes</h3>
+
+                <ul>
+                    {% for ingredient in recipe.ingredients %}
+                        <li>
+                            <p>{{ ingredient }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="preparation">
+                <h3>Modo de preparo</h3>
+
+                <ul>
+                    {% for prepare in recipe.preparation %}
+                        <li>
+                            <p>{{ prepare }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
 

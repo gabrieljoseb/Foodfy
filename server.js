@@ -40,6 +40,10 @@ server.get('/recipes/:index', (req, res) => {
     return res.render("recipe", { recipe: recipes[recipeIndex] })
 })
 
+server.get('/recipe', (req, res) => {
+    res.render('recipe', { recipe: data })
+})
+
 server.listen(5000, () => {
     console.log('server is running')
 })

@@ -1,3 +1,7 @@
+ul {
+    margin-left: 15px;
+}
+
 .card__image-container img {
     border-radius: 15px;
 }
@@ -15,4 +19,12 @@
     color: #777777;
     text-align: center;
     margin-top: 5px;
+}
+
+.informations h3 {
+    margin-top: 50px;
+}
+
+.preparation h3 {
+    margin-top: 39px;
 }
