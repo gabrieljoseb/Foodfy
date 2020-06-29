@@ -21,11 +21,33 @@ ul {
     margin-top: 5px;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    
+}
+
 .ingredients h3 {
     margin-top: 50px;
+}
+
+.main a {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+    color: #999999;
+}
+
+.main a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .preparation h3,
 .information h3 {
     margin-top: 39px;
+}
+
+.hide {
+    display: none;
 }
