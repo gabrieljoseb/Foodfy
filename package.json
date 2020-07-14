@@ -18,6 +18,8 @@
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "browser-sync": "^2.26.7",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5"
   }
 }
