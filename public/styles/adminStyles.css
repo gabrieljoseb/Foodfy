@@ -36,8 +36,9 @@ body header a img {
 
 .recipes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 30px auto 0;
+    grid-template-columns: 480px 1fr;
+    margin-top: 30px;
+    margin-left: 230px;
     row-gap: 20px;
 }
 
@@ -49,8 +50,32 @@ body header a img {
 .recipe .image-container img {
     width: 172px;
     height: 80px;
+    border-radius: 8.57px;
 }
 
 .information {
     margin-left: 20px;
+}
+
+.information h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.information span p {
+    margin-top: 5px;
+    color: #777;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.information a {
+    text-decoration: none;
+    color: #6558C3;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
 }
