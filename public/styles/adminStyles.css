@@ -1,0 +1,56 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body header {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+
+body header a img {
+    margin: 25px 0 25px;
+    height: 26.9px;
+    width: 90.6px;
+    margin-left: 230px;
+}
+
+.title {
+    margin-left: 230px;
+}
+
+.title h2 {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto 0;
+    row-gap: 20px;
+}
+
+.recipes .recipe {
+    display: grid;
+    grid-template-columns: 172px 1fr;
+}
+
+.recipe .image-container img {
+    width: 172px;
+    height: 80px;
+}
+
+.information {
+    margin-left: 20px;
+}
