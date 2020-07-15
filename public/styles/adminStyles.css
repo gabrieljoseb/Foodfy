@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
+:root {
+    --rocketseat-color: #6558C3;
+}
+
 * {
     margin: 0;
     border: 0;
@@ -15,6 +19,8 @@ body header {
     width: 100%;
     height: 80px;
 }
+
+/*=== INDEX ===*/
 
 body header a img {
     margin: 25px 0 25px;
@@ -78,4 +84,40 @@ body header a img {
     font-weight: bold;
     display: inline-block;
     margin-top: 10px;
+}
+
+/*=== DETAILS ===*/
+.title#recipe {
+    max-width: 940px;
+    position: relative;
+}
+
+.title#recipe h2 {
+    display: inline-block;
+    align-items: center;
+}
+
+.title#recipe a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--rocketseat-color);
+    padding: 9px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.detailed-recipe .image-container {
+    margin-left: 230px;
+}
+
+.detailed-recipe .image-container img {
+    width: 940px;
+    height: 280px;
+    margin-top: 24px;
+    border-radius: 15px;
 }

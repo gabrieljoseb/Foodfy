@@ -5,11 +5,17 @@ exports.index = (req, res) => {
     return res.render("admin/index", { recipes: data })
 }
 
-exports.create = (req, res) => {
-    return res.render("home")
+exports.show = (req, res) => {
+    const recipes = data
+    let recipeIndex = req.params.index
+
+    if (!recipes[recipeIndex])
+        return res.send('page not found!')
+
+    return res.render("admin/details", { recipe: recipes[recipeIndex] })
 }
 
-exports.show = (req, res) => {
+exports.create = (req, res) => {
     return res.render("home")
 }
 
