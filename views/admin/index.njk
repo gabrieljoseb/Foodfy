@@ -5,70 +5,24 @@
 {% endblock head %}
 
 {% block content %}
-<div class="title">
-    <h2>Gerenciar receitas</h2>
-</div>
+    <div class="title">
+        <h2>Gerenciar receitas</h2>
+    </div>
 
-<section class="recipes">
-    <div class="recipe">
-        <div class="image-container">
-            <img src="../assets/burger.png" alt="triplo burguer bacon">
-        </div>
-        <div class="information">
-            <h3>Triplo burguer bacon</h3>
-            <span><p>por Jorge Relato</p></span>
-            <a href="#">Visualizar</a>
-        </div>
-    </div>
-    <div class="recipe">
-        <div class="image-container">
-            <img src="../assets/burger.png" alt="triplo burguer bacon">
-        </div>
-        <div class="information">
-            <h3>Triplo burguer bacon</h3>
-            <span><p>por Jorge Relato</p></span>
-            <a href="#">Visualizar</a>
-        </div>
-    </div>
-    <div class="recipe">
-        <div class="image-container">
-            <img src="../assets/burger.png" alt="triplo burguer bacon">
-        </div>
-        <div class="information">
-            <h3>Triplo burguer bacon</h3>
-            <span><p>por Jorge Relato</p></span>
-            <a href="#">Visualizar</a>
-        </div>
-    </div>
-    <div class="recipe">
-        <div class="image-container">
-            <img src="../assets/burger.png" alt="triplo burguer bacon">
-        </div>
-        <div class="information">
-            <h3>Triplo burguer bacon</h3>
-            <span><p>por Jorge Relato</p></span>
-            <a href="#">Visualizar</a>
-        </div>
-    </div>
-    <div class="recipe">
-        <div class="image-container">
-            <img src="../assets/burger.png" alt="triplo burguer bacon">
-        </div>
-        <div class="information">
-            <h3>Triplo burguer bacon</h3>
-            <span><p>por Jorge Relato</p></span>
-            <a href="#">Visualizar</a>
-        </div>
-    </div>
-    <div class="recipe">
-        <div class="image-container">
-            <img src="../assets/burger.png" alt="triplo burguer bacon">
-        </div>
-        <div class="information">
-            <h3>Triplo burguer bacon</h3>
-            <span><p>por Jorge Relato</p></span>
-            <a href="#">Visualizar</a>
-        </div>
-    </div>
-</section>
+    <section class="recipes">
+        {% for recipe in recipes %}
+            <div class="recipe">
+                <div class="image-container">
+                    <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+                </div>
+                <div class="information">
+                    <h3>{{ recipe.title }}</h3>
+                    <span>
+                        <p>{{ recipe.author }}</p>
+                    </span>
+                    <a href="#">Visualizar</a>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
 {% endblock content %}
