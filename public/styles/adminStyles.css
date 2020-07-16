@@ -140,8 +140,28 @@ body header #logo a img {
     margin-top: 50px;
 }
 
-.header-information h3 {
+.header-information h1 {
     font-size: 36px;
     font-weight: bold;
     line-height: 42px;
+}
+
+.header-information span p {
+    font-size: 20px;
+    color: #777;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.information {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.information .ingredients h2 {
+    margin-top: 31px;
+}
+
+.information h2 {
+    margin-top: 41px;
 }
