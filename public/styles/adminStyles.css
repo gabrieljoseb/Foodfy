@@ -165,3 +165,11 @@ body header #logo a img {
 .information h2 {
     margin-top: 41px;
 }
+
+.information p:first-of-type {
+    margin-top: 19px;
+}
+
+.information p:last-of-type {
+    margin-bottom: 51px;
+}
