@@ -49,11 +49,15 @@ body header #logo a img {
     line-height: 28px;
 }
 
+.admin-cards {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .recipes {
     display: grid;
     grid-template-columns: 480px 1fr;
     margin-top: 30px;
-    margin-left: 230px;
     row-gap: 20px;
 }
 

@@ -9,20 +9,22 @@
         <h2>Gerenciar receitas</h2>
     </div>
 
-    <section class="recipes">
-        {% for recipe in recipes %}
-            <div class="recipe">
-                <div class="image-container">
-                    <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+    <div class="admin-cards">
+        <section class="recipes">
+            {% for recipe in recipes %}
+                <div class="recipe">
+                    <div class="image-container">
+                        <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+                    </div>
+                    <div class="information">
+                        <h3>{{ recipe.title }}</h3>
+                        <span>
+                            <p>{{ recipe.author }}</p>
+                        </span>
+                        <a href="#">Visualizar</a>
+                    </div>
                 </div>
-                <div class="information">
-                    <h3>{{ recipe.title }}</h3>
-                    <span>
-                        <p>{{ recipe.author }}</p>
-                    </span>
-                    <a href="#">Visualizar</a>
-                </div>
-            </div>
-        {% endfor %}
-    </section>
+            {% endfor %}
+        </section>
+    </div>
 {% endblock content %}
