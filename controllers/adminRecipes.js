@@ -1,5 +1,5 @@
-const data = require('../data')
-const { recipe } = require('./recipes')
+const fs = require('fs')
+const data = require('../data.json')
 
 exports.index = (req, res) => {
     return res.render("admin/index", { recipes: data })
@@ -19,11 +19,32 @@ exports.create = (req, res) => {
     return res.render("home")
 }
 
-exports.edit = (req, res) => {
-    return res.render("home")
+exports.post = (req, res) => {
+    const keys = Object.keys(req.body)
+
+    for (let key of keys) {
+        if (req.body[key] == "")
+            return res.send('please, fill all the fields')
+    }
+
+    let id = 1
+    const lastRecipe = data.recipes[data.recipes.length - 1]
+
+    if (lastRecipe) id = lastRecipe.id + 1
+
+    data.recipes.push({
+        id,
+        ...req.body,
+    })
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
+        if (err) return res.send('An error occurred!')
+
+        return res.redirect('admin/index')
+    })
 }
 
-exports.post = (req, res) => {
+exports.edit = (req, res) => {
     return res.render("home")
 }
 
