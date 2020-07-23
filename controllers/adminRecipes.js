@@ -2,11 +2,11 @@ const fs = require('fs')
 const data = require('../data.json')
 
 exports.index = (req, res) => {
-    return res.render("admin/index", { recipes: data })
+    return res.render("admin/index", { recipes: data.recipes })
 }
 
 exports.show = (req, res) => {
-    const recipes = data
+    const recipes = data.recipes
     let recipeIndex = req.params.index
 
     if (!recipes[recipeIndex])
